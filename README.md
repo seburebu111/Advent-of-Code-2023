@@ -1,6 +1,6 @@
 # &#9924; Advent of Code 2023 &#9924;
 Welcome to my repository for solutions to the Advent of Code challenges, implemented in Python. In this repository, you'll find my solutions for each day's puzzle, along with explanations and any relevant notes.
-## Structure
+## Structure &#128208;
 The repository is structured by day. Each day's problem set has its directory, named according to the convention `day_x`. Each directory has three files:
 + the input file `input.txt`
 + the solution to the first problem `solutionA.py`
@@ -22,7 +22,7 @@ cd advent-of-code-2023/day_one
 python3 solutionA.py
 ```
 The script will always run on the input file named `input.txt`, placed inside the same folder.
-## License
+## License &#9878;
 This repository is licensed under the GNU GENERAL PUBLIC License - see the <a href="/LICENSE">LICENSE</a> file for details.
 
 Happy coding! Merry Christmas!&#127876;
