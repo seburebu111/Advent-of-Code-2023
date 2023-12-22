@@ -20,7 +20,6 @@ def kernelStrToInt(s: str) -> List[int]:
 t = kernelStrToInt(lines[0].split(": ")[1])
 d = kernelStrToInt(lines[1].split(": ")[1])
 
-    
 # the points of in which the record was made is found by the formula
 # x1,2 = (t +/- sqrt(t^2-4d))/2
 
