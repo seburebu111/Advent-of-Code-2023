@@ -9,16 +9,30 @@ from typing import List
 # 3. two pair: 4, 3
 # 2. one pair: 2, 4
 # 1. high card: 1, 5
+# the number of jokers will be added to the highest card count
 
-map = {"2":1, "3":2, "4":3, "5":4, "6":5, "7":6, "8":7, "9":8, "T":9, "J":10, "Q":11, "K":12, "A":13}
+map = {"J":1, "2":2, "3":3, "4":4, "5":5, "6":6, "7":7, "8":8, "9":9, "T":10, "Q":11, "K":12, "A":13}
 
-def getType(hand:str) -> List[int]:    # create an array of appearances of each card
-    app = [0]*14
+def getType(hand:str) -> List[int]:    
+    # create an array of appearances of each card, starting from 0
+    app = [0]*13
     for card in hand:
         app[map[card]-1] += 1
     cardProd = 1
     cardCount = 0
-    for i in range(1,14):
+        
+    if app[0] == 5:
+        return 7    # there are 5 jokers
+    # finding where to add the jokers
+    maxx, maxi = app[2], 2
+    for i in range(1,13):
+        if app[i] > maxx:
+            maxx = app[i]
+            maxi = i
+    app[maxi] += app[0]  # add the jokers to the highest card count
+    
+    # differing between the types, as mentioned above, but without the jokers
+    for i in range(1,13):
         if app[i] != 0:
             cardCount += 1
             cardProd *= app[i]
@@ -35,8 +49,7 @@ def getType(hand:str) -> List[int]:    # create an array of appearances of each 
         return 4
     elif cardProd == 6:
         return 5
-    else:
-        return 7
+    return 7
 
 def getCardsAsInts(hand:str) -> List[int]:    # create an array of the cards in the hand
     cards = []
