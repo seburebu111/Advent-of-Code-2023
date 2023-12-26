@@ -18,6 +18,7 @@ For easier access to the code files, I have provided a table of contents:
 |<a href="https://adventofcode.com/2023/day/6">Day 6</a>|<a href="/day_six">day_six</a>|<a href="/day_six/solutionA.py">Part 1</a>, <a href="/day_six/solutionB.py">Part 2</a>|
 |<a href="https://adventofcode.com/2023/day/7">Day 7</a>|<a href="/day_seven">day_seven</a>|<a href="/day_seven/solutionA.py">Part 1</a>, <a href="/day_seven/solutionB.py">Part 2</a>|
 |<a href="https://adventofcode.com/2023/day/8">Day 8</a>|<a href="/day_eight">day_eight</a>|<a href="/day_eight/solutionA.py">Part 1</a>, <a href="/day_eight/solutionB.py">Part 2</a>|
+|<a href="https://adventofcode.com/2023/day/9">Day 9</a>|<a href="/day_nine">day_nine</a>|<a href="/day_nine/solutionA.py">Part 1</a>, <a href="/day_nine/solutionB.py">Part 2</a>|
 
 ## Running the code &#9881;
 To run a specific day's solution, navigate to the corresponding directory and execute the `solutionA.py` or `solutionB.py` script. Make sure you have Python3 installed on your system. For example, to execute the solution from day 1:
