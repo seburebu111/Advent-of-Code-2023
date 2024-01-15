@@ -26,7 +26,7 @@ To run a specific day's solution, first navigate to the corresponding directory.
 ```bash
 cd advent-of-code-2023/day_one
 ```
-Then, create your input.txt file, open it in and paste your input inside. Type CTRL+C/Command+C to close the file. Opening it in your preferred file explorer is also possible, but don't forget to save the file!
+Then, create your input.txt file, open it in and paste your input inside. Press CTRL+C to close the file. Opening it in your preferred file explorer is also possible, but don't forget to save the file!
 ```bash
 touch input.txt
 cat >> input.txt
