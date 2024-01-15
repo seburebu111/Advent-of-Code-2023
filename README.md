@@ -26,11 +26,11 @@ To run a specific day's solution, first navigate to the corresponding directory.
 ```bash
 cd advent-of-code-2023/day_one
 ```
-Then, create your input.txt file, open it in your preferred file explorer and paste your input inside. Dont forget to save the file!
+Then, create your input.txt file, open it in and paste your input inside. Type CTRL+C/Command+C to close the file. Opening it in your preferred file explorer is also possible, but don't forget to save the file!
 ```bash
 touch input.txt
+cat >> input.txt
 ```
-
 Now, execute the `solutionA.py` or `solutionB.py` script. Make sure you have Python3 installed on your system. For example, to execute the solution from day 1:
 ```bash
 python3 solutionA.py
